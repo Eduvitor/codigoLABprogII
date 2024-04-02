@@ -1,0 +1,204 @@
+
+:root, :root.light {
+    /*Color modo claro*/
+    --color_fundo: #00693e;
+    --color_letras_div1: #fff;
+    --color_hover: #ec5840;
+    /*Color para o resto da página no modo claro*/
+    --color_caixa_fundo: #fff;
+    --color_caixa_letras: rgb(0,0,0);
+    /*Color para a caixa de seleção de tema da pagina*/
+    --color_label_fundo:  	#87CEEB;
+    /*Color para os icones nos slides*/
+    --color_slide_moon: #fff;
+    --color_slide_sun: #FF4500;
+    /*color para os botoes modo claro*/
+    --color_buttons: #B0C4DE;
+    --color_font_buttons: #000000;
+    --color_body: #fff;
+}
+.dark-mode:root {
+    /*Color modo escuro*/
+    --color_fundo: #000000;
+    --color_letras_div1: #fff;
+    --color_hover: #ec5840;
+    /*Color para o resto da página no modo escuro*/
+    --color_caixa_fundo: #1C1C1C;
+    --color_caixa_letras: #fff;
+    --color_label_fundo: #A9A9A9;
+    /*Color para os slides*/
+    --color_slide_moon:#fff;
+    --color_slide_sun: #FF4500;
+    /*Color para os buttons*/
+    --color_buttons: #000000;
+    --color_font_buttons: #fff;
+    /*Color gradiente para o fundo da pag modo escuro*/
+    --color_body:rgb(0,0,0);
+    --color_body_gradient: linear-gradient(11deg, rgba(0,0,0,1) 38%, rgba(2,0,36,1) 94%);
+}
+
+body {
+    background: var(--color_body);
+    background: var(--color_body_gradient);
+}
+
+
+
+/*botao toggle*/
+
+.botaoToogle {
+    position: absolute;
+    top: 2px;
+    margin: 35px;
+    right: 0;    
+}
+
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: var(--color_label_fundo);
+    border-radius: 50px; /*Faz o label ficar com os cantos arredondados util para fazer slides etc*/
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*space between para poder separar os icons*/
+    padding: 4px; /*Esse atributo muda o diametro do label*/
+
+    position: relative;
+    height: 16px;
+    width: 40px; /*muda o comprimento da label*/
+
+    transform: scale(1.5); /*serve para ajustar a escala do campo que está sendo alterado*/
+}
+/*Esse controla a bolinha que vai ficar dentro do slide do label sendo o papel de switch*/
+.label .ball {
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 20px; /*muda o diametro da ball*/
+    width: 20px; /*muda o diamentro da ball*/
+
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+/*o checkbox ira ser clicado e dentro do label no elemento "ball" será movimentado */
+
+.checkbox:checked + label .ball {
+    transform: translate(24px); /*controla quanto pixels o slide irá andar dentro da label que definimos*/
+}
+/*controlando a cor para os slides da lua e do Sol dentro da label*/
+.fa-moon {
+    color: #fff;
+}
+
+.fa-sun {
+    color: #FF4500;
+}
+
+
+.h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.div1 {
+    width: auto;
+    height: 270px;
+    top: 10px;
+    color: var(--color_letras);
+    background-color: var(--color_fundo);
+}
+.tituloBoasVindas {
+    color: var(--color_letras_div1);
+    text-align: center;
+    position:relative;
+    font-family: fonte uffs;
+}
+
+
+
+.paragrafotop {
+    color: black;
+}
+
+.imagemUFFS {
+    width: 170px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.caixa {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--color_caixa_fundo);
+    color: var(--color_caixa_letras); /*color das letras da caixa onde irá ficar os horarios*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+h2 {
+    margin-left: 10px;
+    margin-bottom: 20px;   
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    margin-top: 10px;
+    width: 50%;
+}
+
+.cusoInfo {
+    margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*FONTE EXTERNA*/
+
+@font-face {
+    font-family: fonte uffs;
+    src: url(/fontes/eras-bold-itc-maisfontes.8a4d/eras-bold-itc.ttf);
+}
+
+/*Div onde será mostrada os horários dos cursos*/
+
+.caixa .horariosCursos{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.tg {
+    border: 3px solid black;
+}
+
+/*customizacoes dos botoes*/
+
+.buttonGeral {
+    height: 20px;
+    color: var(--color_font_buttons);
+    background-color: var(--color_buttons);
+    border-radius: 10%;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+
+
+/*Customizacao da tabela dos horarios*/

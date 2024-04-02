@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDA UFFS</title>
+    <link rel="site-icon" type="png" href="/ImagensUFFS/uffsassinaturavisualpreferencial _em verde _RGB.png">
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:12px 20px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:12px 20px;word-break:normal;}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+        .tg .tg-yvxi{font-family:serif !important;font-size:100%;text-align:left;vertical-align:top}
+        </style>'
+</head>
+<body>
+    <div class="div1">
+        <img class="imagemUFFS" src="ImagensUFFS/logoUFFS.png" alt="Logo UFFS">
+        <h1 class="tituloBoasVindas">Bem vindo aos horários da UFFS</h1>
+        <!--DIV do botão para trocar o tema da pagina-->
+        <div class="botaoToogle">
+            <input type="checkbox" class="checkbox" id="chk">
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <!--DIV do botão para trocar o tema da pagina-->
+    </div>
+    <div class="caixa">
+        <header>
+            <h2 class="cc">Ciência da computação</h2>
+            <p class="cusoInfo"><strong>Semestre: </strong> 2024/1</p>
+            <p class="cusoInfo"><strong>Turno:</strong> Noturno</p>
+            <p class="cusoInfo"><strong>Coordenação:</strong> cc.uffs.edu.br</p>
+            <button class="buttonGeral" id="CC">Ver horários</button>
+            <!--SEGUNDO CURSO-->
+            <h2 class="hh">História</h2>
+            <p class="cusoInfo"><strong>Semestre: </strong> 2024/1</p>
+            <p class="cusoInfo"><strong>Turno:</strong> Noturno</p>
+            <p class="cusoInfo"><strong>Coordenação:</strong> historia.uffs.edu.br</p>
+            <button class="buttonGeral" id="HIS">Ver horários</button>
+            <!--Terceiro curso-->
+            <h2 class="mm">Medicina</h2>
+            <p class="cusoInfo"><strong>Semestre: </strong> 2024/1</p>
+            <p class="cusoInfo"><strong>Turno:</strong> Integral</p>
+            <p class="cusoInfo"><strong>Coordenação:</strong> medicina.uffs.edu.br</p>
+            <button class="buttonGeral" id="MED">Ver horários</button>
+            <!--Div onde irá ser mostrada os horarios dos cursos-->
+        </header>
+        <div class="horariosCursos">
+          <table class="tg" id="thrs">
+              <thead>
+                <tr>
+                  <th class="tg-0lax"></th>
+                  <th class="tg-0lax">SEGUNDA</th>
+                  <th class="tg-0lax">TERCA</th>
+                  <th class="tg-0lax">QUARTA</th>
+                  <th class="tg-0lax">QUINTA</th>
+                  <th class="tg-0lax">SEXTA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="trDas730">
+                  <td class="tg-0lax">7:30</td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                </tr>
+                <tr id="trDas10">
+                  <td class="tg-0lax">10:20</td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                </tr>
+                <tr id="trDas1">
+                  <td class="tg-0lax">13:30</td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                </tr>
+                <tr id="trDas16">
+                  <td class="tg-0lax">16:00</td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                  <td class="tg-0lax"></td>
+                </tr>
+                <tr id="trDas7">
+                  <td class="tg-0lax">19:00</td>
+                  <td class="tg-0lax7S"></td>
+                  <td class="tg-0lax7T"></td>
+                  <td class="tg-0lax7Q"></td>
+                  <td class="tg-0lax7Q"></td>
+                  <td class="tg-0lax7S"></td>
+                </tr>
+                <tr id="trDas9">
+                  <td class="tg-0lax">21:00</td>
+                  <td class="tg-0lax9S" id="9Seg"></td>
+                  <td class="tg-0lax9T" id="9Ter"></td>
+                  <td class="tg-0lax9Q" id="9Qua"></td>
+                  <td class="tg-0lax9Q" id="9Qui"></td>
+                  <td class="tg-0lax9Q" id="9Sex"></td>
+                </tr>
+              </tbody>
+              </table>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/3c821a8c3a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
